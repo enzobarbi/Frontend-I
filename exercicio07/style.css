@@ -1,6 +1,7 @@
-.imagem{
-    width: 100%;
-    height: 100%;
+/* Adicionando estilos para tornar as imagens responsivas */
+.imagem {
+    width: 50%;
+    height: auto;
 }
 
 .container-flex {
@@ -11,4 +12,16 @@
     flex: 1;
     display: flex;
     flex-direction: column;
+    border: 2px solid black; /* Adiciona uma borda sólida com 2px de largura e cor cinza claro */
+    padding: 10px; /* rgb(9, 9, 9)iona um espaçamento interno de 10px para afastar o conteúdo da borda */
+}
+
+
+/* Adicionando estilos específicos para a segunda coluna de imagens */
+.coluna-imagem {
+    flex: 1; /* Ocupar todo o espaço disponível na linha */
+    display: flex;
+    flex-wrap: wrap; /* Quebrar para a próxima linha se necessário */
+    justify-content: space-around; /* Distribuir as imagens uniformemente */
+    align-items: center; /* Centralizar as imagens verticalmente */
 }
